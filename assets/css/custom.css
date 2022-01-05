@@ -1,0 +1,165 @@
+.main-sec {
+  height: calc(100vh - 50px);
+}
+.scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #f3f0f0;
+  border-radius: 10px;
+  border: 1px solid #616a70;
+  z-index: 55;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #c5c9cb;
+}
+.tooltip {
+  opacity: 0;
+
+  visibility: hidden;
+  top: 0;
+  left: 46px;
+  transform: rotateY(80deg) scale(0.5);
+  transform-origin: left center;
+
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.main-btn:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateY(0) scale(1);
+}
+.inset-shadow {
+  box-shadow: inset 0 0 0 0.15em rgb(0 0 0 / 30%);
+}
+.drag-handle {
+  cursor: grab;
+}
+.draggableList:hover .drag-handle {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease;
+}
+.draggableList:hover .action {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease;
+}
+.joystick {
+  cursor: pointer;
+  cursor: grab;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  left: 50%;
+  top: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 15%);
+  transition: transform 0.15s cubic-bezier(0.37, 1.98, 0.43, 0.76);
+}
+.open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.4s ease;
+}
+.tutorial-btn:hover .tutorial-svg {
+  fill: #fff;
+}
+.tutorial-btn:hover .Keyboard-svg {
+  stroke: #fff;
+}
+.tutorial-btn:hover .menu-text {
+  color: #fff;
+}
+.modal {
+  pointer-events: all;
+  cursor: default;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: hsla(0, 0%, 0%, 0.1);
+  visibility: hidden;
+  opacity: 0;
+}
+.tool-Sibilings,
+.tool-Sibilings2 {
+  box-shadow: 0 10px 20px rgb(0 0 0 / 15%);
+}
+.bounce-ani {
+  animation: bounce 0.5s;
+}
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.pen:hover .penSvg {
+  stroke: #1690ed;
+}
+.editModal {
+  box-shadow: 0 10px 20px rgb(0 0 0 / 15%);
+}
+.borderbrand {
+  border-color: #1690ed !important;
+}
+.focalPoint,
+.image,
+.icon {
+  transition: all 0.4s ease;
+}
+.dropzone,
+.fileType {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.dropzone:hover {
+  box-shadow: inset 0 0 0 2px hsl(0deg 0% 0% / 8%);
+}
+.dropzone:hover .fileType {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.caption-text {
+  transition: all 0.4s ease;
+}
+.caption:hover {
+  background-color: #f3f0f0;
+}
+.caption:hover .caption-text {
+  color: #1690ed;
+  transform: translateX(5px);
+}
+.inputShadow:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px hsl(207deg 100% 55% / 30%);
+}
+.button,
+.sectionPanle {
+  padding-bottom: 100px;
+  transition: all 0.4s ease;
+}
